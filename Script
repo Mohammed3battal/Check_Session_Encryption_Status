@@ -1,0 +1,6 @@
+-- Check encryption status for each active session
+SELECT  
+    session_id AS [Session ID],
+    encrypt_option AS [Encrypted?]
+FROM    
+    sys.dm_exec_connections;
